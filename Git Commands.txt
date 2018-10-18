@@ -1,0 +1,33 @@
+git --version
+git config --global user.name "Dhruv"
+git config --global user.email thakkardhruv1996@gmail.com
+git config --list
+
+git init
+- initializes current folder in repository
+git status
+-current status of the folder
+git add .
+-add all files to reposiotry(uncommited), . is for all, <files or Folders>
+git commit -m "first commit"
+-commits changes from cache to repository, -m for message
+git log --oneline
+-see a brief log of commits
+
+git checkout 356b25f index.html
+-get older version file index.html with commit number 256b25f and put that file in stage area
+git reset HEAD index.html
+-unstage the checked out file
+git checkout --index.html
+-gives the latest commited file
+git clone https://github.com/thakkardhruv/git-test.git
+-getting the project from hub to local
+
+git reset
+-reset the staging area to last commit without disturbing working directory
+
+-------------------------Remote Commands--------------------------------
+git remote add origin https://github.com/thakkardhruv/git-test.git
+-add the remote online repository
+git push -u origin master
+-push the current repository to master branch
